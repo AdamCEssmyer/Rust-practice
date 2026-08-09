@@ -1,3 +1,3 @@
 fn main() {
-    println!("Hello, world!");
+    let coffee_price: f64 = 5.99;
 }
