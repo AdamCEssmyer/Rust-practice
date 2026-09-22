@@ -1,13 +1,17 @@
 
 const TAX_RATE: f64 = 0.08;
 type Meters = i32;
+
+#[allow(unused_variables)]
 fn main() {
     //scope
     let coffee_price: f64 = 5.99;
     //constant
-
+    //directive
+    
     //alias
     let mile_race_length: Meters = 1600;
+    let two_mile_race_length: Meters = 3200;
     println!("The tax rate is {TAX_RATE}");
 
     {
