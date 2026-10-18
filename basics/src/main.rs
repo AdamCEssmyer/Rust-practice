@@ -19,5 +19,19 @@ fn main() {
        println!("The price is {coffee_price}");
        println!("A one mile race is {mile_race_length} meters") ;
     }
+
+    let user1 = User {
+        acitve: true,
+        username: String::from("Timmy"),
+        email: String::from("tim@email.com"),
+        sign_in_count: 1,
+    };
+    //Structs
+    struct User {
+        active: bool,
+        username: String,
+        email: String,
+        sign_in_count: u64,
+    }
 }
 
