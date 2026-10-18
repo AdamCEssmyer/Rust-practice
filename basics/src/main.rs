@@ -18,10 +18,11 @@ fn main() {
     {
        println!("The price is {coffee_price}");
        println!("A one mile race is {mile_race_length} meters") ;
+       println!("Active: {} Username: {} Email: {} Sign in count: {}", user1.active, user1.username, user1.email, user1.sign_in_count);
     }
 
     let user1 = User {
-        acitve: true,
+        active: true,
         username: String::from("Timmy"),
         email: String::from("tim@email.com"),
         sign_in_count: 1,
