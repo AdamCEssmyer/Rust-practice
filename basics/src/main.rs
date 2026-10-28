@@ -18,8 +18,7 @@ fn main() {
     {
        println!("The price is {coffee_price}");
        println!("A one mile race is {mile_race_length} meters") ;
-       println!("Active: {} Username: {} Email: {} Sign in count: {}", user1.active, user1.username, user1.email, user1.sign_in_count);
-    }
+    };
 
     let user1 = User {
         active: true,
@@ -34,5 +33,12 @@ fn main() {
         email: String,
         sign_in_count: u64,
     }
+    fn build_user(email: String, username: String) -> User {
+    User {
+        active: true,
+        username,
+        email,
+        sign_in_count: 1,
+    }
 }
-
+}
