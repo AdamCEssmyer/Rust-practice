@@ -18,6 +18,7 @@ fn main() {
     {
        println!("The price is {coffee_price}");
        println!("A one mile race is {mile_race_length} meters") ;
+       println!("The current season is {SEASON}");
     };
 
     let user1 = User {
@@ -41,4 +42,10 @@ fn main() {
         sign_in_count: 1,
     }
 }
+    let user2 = User {
+        active: user1.active,
+        username: user1.username,
+        email: String::from("anotherexample.com"),
+        sign_in_count: user1.sign_in_count,
+    };
 }
